@@ -1,42 +1,39 @@
 """
 ============================
 Author:luli
-time:2020/2/26
-company:happy
+Time:2020/3/10
+Company:Happy
 ============================
 """
-from common.connectdb import DB
-from decimal import Decimal
 
-db = DB()
+import random
+import unittest
+from common.handlerequest import SendRequest
 
-# sql = 'SELECT count(member_id) FROM futureloan.loan WHERE member_id=9591519'
-# res = db.find_one(sql)['count(member_id)']
-# print(res)
 
-# sql = 'SELECT id FROM  futureloan.loan WHERE status = 2 and amount<10000;'
-# loan_id = db.find_one(sql)['id']
-# print(loan_id)
+def random_data():
+    user = ''.join(random.sample('0123456789zbcdefghijklmnopqrstuvwxyz', 6))
+    email = user + '@163.com'
+    return user, email
 
-# sql2 = 'SELECT sum(amount) FROM  futureloan.invest WHERE loan_id=1781'
-# amount = db.find_one(sql2)
-#
-# print(amount)
 
-sql1 = 'SELECT amount FROM  futureloan.loan WHERE id=27;'
-project_amount = db.find_one(sql1)['amount']
-print(project_amount)
-sql2 = 'SELECT sum(amount) FROM  futureloan.invest WHERE loan_id=27;'
-invest_amount = db.find_one(sql2)['sum(amount)']
-print(invest_amount)
-# # 将剩余的竞标金额+100，来测试投资金额大于项目可投余额
-# leave_amout = project_amount - invest_amount + Decimal('100')
-# print(leave_amout)
+user, email = random_data()
 
-# num = 12345
-# num = num // 100 * 100
-# print(num)
+request = SendRequest()
+url = r'http://api.keyou.site:8000/user/register/'
+method = 'post'
+data = {
+    "username": user,
+    "email": email,
+    "password": "lemon",
+    "password_confirm": "lemonban"
+}
 
-# sql_invest = 'SELECT count(member_id) FROM futureloan.invest WHERE member_id={} and loan_id={}'.format(8129, 13)
-# start_invest_num = db.find_one(sql_invest)['count(member_id)']
-# print(start_invest_num)
+# 获取结果
+response = request.send(url=url, method=method, json=data)
+print(response)
+res = response.json()
+print(list(res.values())[0])
+
+status = response.status_code
+print(status)

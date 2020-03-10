@@ -28,7 +28,7 @@ class TestRegister(unittest.TestCase):
     @data(*datas)
     def test_regiter(self, case):
         # 准备测试数据
-        CaseData.user = self.random_user()
+        CaseData.username = self.random_user()
         CaseData.email = self.random_email()
         url = conf.get('env', 'url') + replace_data(case['url'])
         method = case['method']
@@ -39,10 +39,15 @@ class TestRegister(unittest.TestCase):
         # 获取结果
         response = self.request.send(url=url, method=method, json=data)
         res = response.json()
+        status = response.status_code
         # 对预期结果和相应结果进行断言
         try:
-            self.assertEqual(expected['code'], res['code'])
-            self.assertEqual(expected['msg'], res['msg'])
+            self.assertEqual(expected['status'], status)
+            if case['title'] != '注册成功':
+                if case['method'].lower() == 'get':
+                    self.assertEqual(expected['count'], res['count'])
+                else:
+                    self.assertIn(expected['msg'], list(res.values())[0][0])
 
         except AssertionError as E:
             print('预期结果：', expected)
@@ -55,20 +60,20 @@ class TestRegister(unittest.TestCase):
             self.excel.write_data(row=row, column=8, value='通过')
 
     def random_user(self):
-        user = ''.join(random.sample('0123456789zbcdefghijklmnopqrstuvwxyz', 6))
-        url = r'http://api.keyou.site:8000/user/{}/count/'.format(user)
+        self.user = ''.join(random.sample('0123456789zbcdefghijklmnopqrstuvwxyz', 6))
+        url = r'http://api.keyou.site:8000/user/{}/count/'.format(self.user)
         method = 'get'
-        response = self.request.get(url=url, method=method)
+        response = self.request.send(url=url, method=method)
         res = response.json()
         if res['count'] == 1:
             self.random_user()
-        return user
+        return self.user
 
     def random_email(self):
-        email = self.user + '163.com'
+        email = self.user + '@163.com'
         url = r'http://api.keyou.site:8000/user/{}/count/'.format(email)
         method = 'get'
-        response = self.request.get(url=url, method=method)
+        response = self.request.send(url=url, method=method)
         res = response.json()
         if res['count'] == 1:
             self.random_user()

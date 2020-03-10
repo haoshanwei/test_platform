@@ -1,0 +1,540 @@
+2020-03-10 21:50:39,937 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为空用例不通过
+2020-03-10 21:50:39,937 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in {'username': ['该字段是必填项。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in {'username': ['该字段是必填项。']}
+2020-03-10 21:50:40,280 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为5位用例不通过
+2020-03-10 21:50:40,281 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in {'username': ['仅允许6-20个字符的用户名']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in {'username': ['仅允许6-20个字符的用户名']}
+2020-03-10 21:50:40,665 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为21位用例不通过
+2020-03-10 21:50:40,666 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in {'username': ['仅允许6-20个字符的用户名']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in {'username': ['仅允许6-20个字符的用户名']}
+2020-03-10 21:50:40,973 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名已注册用例不通过
+2020-03-10 21:50:40,973 - [test01_register.py-->line:56]- ERROR: '已存在一位使用该名字的用户' not found in {'username': ['已存在一位使用该名字的用户。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '已存在一位使用该名字的用户' not found in {'username': ['已存在一位使用该名字的用户。']}
+2020-03-10 21:50:41,333 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱为空用例不通过
+2020-03-10 21:50:41,333 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in {'email': ['该字段是必填项。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in {'email': ['该字段是必填项。']}
+2020-03-10 21:50:41,610 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱格式错误用例不通过
+2020-03-10 21:50:41,610 - [test01_register.py-->line:56]- ERROR: '请输入合法的邮件地址' not found in {'email': ['请输入合法的邮件地址。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '请输入合法的邮件地址' not found in {'email': ['请输入合法的邮件地址。']}
+2020-03-10 21:50:41,939 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱已注册用例不通过
+2020-03-10 21:50:41,939 - [test01_register.py-->line:56]- ERROR: '此邮箱已注册' not found in {'email': ['此邮箱已注册']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '此邮箱已注册' not found in {'email': ['此邮箱已注册']}
+2020-03-10 21:50:42,244 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为空用例不通过
+2020-03-10 21:50:42,244 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in {'password': ['该字段是必填项。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in {'password': ['该字段是必填项。']}
+2020-03-10 21:50:42,532 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为5位用例不通过
+2020-03-10 21:50:42,532 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in {'password': ['仅允许6-20个字符的密码']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in {'password': ['仅允许6-20个字符的密码']}
+2020-03-10 21:50:42,824 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为21位用例不通过
+2020-03-10 21:50:42,824 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in {'non_field_errors': ['两次输入密码不正确']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in {'non_field_errors': ['两次输入密码不正确']}
+2020-03-10 21:50:43,114 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为空用例不通过
+2020-03-10 21:50:43,115 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in {'password_confirm': ['该字段是必填项。']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in {'password_confirm': ['该字段是必填项。']}
+2020-03-10 21:50:43,367 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-10 21:50:43,367 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in {'password_confirm': ['仅允许6~20个字符的确认密码']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in {'password_confirm': ['仅允许6~20个字符的确认密码']}
+2020-03-10 21:50:43,715 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-10 21:50:43,716 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in {'non_field_errors': ['两次输入密码不正确']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in {'non_field_errors': ['两次输入密码不正确']}
+2020-03-10 21:50:44,024 - [test01_register.py-->line:55]- ERROR: 注册失败-两个密码不一致用例不通过
+2020-03-10 21:50:44,024 - [test01_register.py-->line:56]- ERROR: '两次输入密码不正确' not found in {'non_field_errors': ['两次输入密码不正确']}
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res)
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '两次输入密码不正确' not found in {'non_field_errors': ['两次输入密码不正确']}
+2020-03-10 22:00:50,718 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为空用例不通过
+2020-03-10 22:00:50,718 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:00:51,013 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为5位用例不通过
+2020-03-10 22:00:51,013 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+2020-03-10 22:00:51,275 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为21位用例不通过
+2020-03-10 22:00:51,275 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+2020-03-10 22:00:51,553 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名已注册用例不通过
+2020-03-10 22:00:51,553 - [test01_register.py-->line:56]- ERROR: '已存在一位使用该名字的用户' not found in dict_values([['已存在一位使用该名字的用户。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '已存在一位使用该名字的用户' not found in dict_values([['已存在一位使用该名字的用户。']])
+2020-03-10 22:00:51,873 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱为空用例不通过
+2020-03-10 22:00:51,873 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:00:52,124 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱格式错误用例不通过
+2020-03-10 22:00:52,124 - [test01_register.py-->line:56]- ERROR: '请输入合法的邮件地址' not found in dict_values([['请输入合法的邮件地址。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '请输入合法的邮件地址' not found in dict_values([['请输入合法的邮件地址。']])
+2020-03-10 22:00:52,363 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱已注册用例不通过
+2020-03-10 22:00:52,363 - [test01_register.py-->line:56]- ERROR: '此邮箱已注册' not found in dict_values([['此邮箱已注册']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '此邮箱已注册' not found in dict_values([['此邮箱已注册']])
+2020-03-10 22:00:52,638 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为空用例不通过
+2020-03-10 22:00:52,638 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:00:52,911 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为5位用例不通过
+2020-03-10 22:00:52,911 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in dict_values([['仅允许6-20个字符的密码']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in dict_values([['仅允许6-20个字符的密码']])
+2020-03-10 22:00:53,223 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为21位用例不通过
+2020-03-10 22:00:53,223 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:00:53,498 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为空用例不通过
+2020-03-10 22:00:53,498 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:00:53,771 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-10 22:00:53,771 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in dict_values([['仅允许6~20个字符的确认密码']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in dict_values([['仅允许6~20个字符的确认密码']])
+2020-03-10 22:00:54,042 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-10 22:00:54,042 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:00:54,347 - [test01_register.py-->line:55]- ERROR: 注册失败-两个密码不一致用例不通过
+2020-03-10 22:00:54,347 - [test01_register.py-->line:56]- ERROR: '两次输入密码不正确' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '两次输入密码不正确' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:02:15,392 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为空用例不通过
+2020-03-10 22:02:15,392 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:02:15,779 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为5位用例不通过
+2020-03-10 22:02:15,779 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+2020-03-10 22:02:16,062 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为21位用例不通过
+2020-03-10 22:02:16,062 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的用户名' not found in dict_values([['仅允许6-20个字符的用户名']])
+2020-03-10 22:02:16,344 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名已注册用例不通过
+2020-03-10 22:02:16,345 - [test01_register.py-->line:56]- ERROR: '已存在一位使用该名字的用户' not found in dict_values([['已存在一位使用该名字的用户。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '已存在一位使用该名字的用户' not found in dict_values([['已存在一位使用该名字的用户。']])
+2020-03-10 22:02:16,607 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱为空用例不通过
+2020-03-10 22:02:16,608 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:02:16,857 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱格式错误用例不通过
+2020-03-10 22:02:16,857 - [test01_register.py-->line:56]- ERROR: '请输入合法的邮件地址' not found in dict_values([['请输入合法的邮件地址。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '请输入合法的邮件地址' not found in dict_values([['请输入合法的邮件地址。']])
+2020-03-10 22:02:17,140 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱已注册用例不通过
+2020-03-10 22:02:17,140 - [test01_register.py-->line:56]- ERROR: '此邮箱已注册' not found in dict_values([['此邮箱已注册']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '此邮箱已注册' not found in dict_values([['此邮箱已注册']])
+2020-03-10 22:02:17,402 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为空用例不通过
+2020-03-10 22:02:17,403 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:02:17,669 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为5位用例不通过
+2020-03-10 22:02:17,669 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in dict_values([['仅允许6-20个字符的密码']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in dict_values([['仅允许6-20个字符的密码']])
+2020-03-10 22:02:17,917 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为21位用例不通过
+2020-03-10 22:02:17,917 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:02:18,177 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为空用例不通过
+2020-03-10 22:02:18,178 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in dict_values([['该字段是必填项。']])
+2020-03-10 22:02:18,600 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-10 22:02:18,601 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in dict_values([['仅允许6~20个字符的确认密码']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in dict_values([['仅允许6~20个字符的确认密码']])
+2020-03-10 22:02:18,891 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-10 22:02:18,891 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:02:19,172 - [test01_register.py-->line:55]- ERROR: 注册失败-两个密码不一致用例不通过
+2020-03-10 22:02:19,172 - [test01_register.py-->line:56]- ERROR: '两次输入密码不正确' not found in dict_values([['两次输入密码不正确']])
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], res.values())
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '两次输入密码不正确' not found in dict_values([['两次输入密码不正确']])
+2020-03-10 22:06:10,700 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名为空用例不通过
+2020-03-10 22:06:10,701 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in ['该字段是必填项。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in ['该字段是必填项。']
+2020-03-10 22:06:11,607 - [test01_register.py-->line:55]- ERROR: 注册失败-用户名已注册用例不通过
+2020-03-10 22:06:11,607 - [test01_register.py-->line:56]- ERROR: '已存在一位使用该名字的用户' not found in ['已存在一位使用该名字的用户。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '已存在一位使用该名字的用户' not found in ['已存在一位使用该名字的用户。']
+2020-03-10 22:06:11,932 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱为空用例不通过
+2020-03-10 22:06:11,932 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in ['该字段是必填项。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in ['该字段是必填项。']
+2020-03-10 22:06:12,234 - [test01_register.py-->line:55]- ERROR: 注册失败-邮箱格式错误用例不通过
+2020-03-10 22:06:12,235 - [test01_register.py-->line:56]- ERROR: '请输入合法的邮件地址' not found in ['请输入合法的邮件地址。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '请输入合法的邮件地址' not found in ['请输入合法的邮件地址。']
+2020-03-10 22:06:12,799 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为空用例不通过
+2020-03-10 22:06:12,799 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in ['该字段是必填项。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in ['该字段是必填项。']
+2020-03-10 22:06:13,416 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为21位用例不通过
+2020-03-10 22:06:13,416 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in ['两次输入密码不正确']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in ['两次输入密码不正确']
+2020-03-10 22:06:13,700 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为空用例不通过
+2020-03-10 22:06:13,700 - [test01_register.py-->line:56]- ERROR: '该字段是必填项' not found in ['该字段是必填项。']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in ['该字段是必填项。']
+2020-03-10 22:06:13,957 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-10 22:06:13,965 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in ['仅允许6~20个字符的确认密码']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in ['仅允许6~20个字符的确认密码']
+2020-03-10 22:06:14,247 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-10 22:06:14,247 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in ['两次输入密码不正确']
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in ['两次输入密码不正确']
+2020-03-10 22:10:43,597 - [test01_register.py-->line:55]- ERROR: 注册失败-密码为21位用例不通过
+2020-03-10 22:10:43,597 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的密码' not found in '两次输入密码不正确'
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的密码' not found in '两次输入密码不正确'
+2020-03-10 22:10:44,252 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-10 22:10:44,252 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in '仅允许6~20个字符的确认密码'
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in '仅允许6~20个字符的确认密码'
+2020-03-10 22:10:44,679 - [test01_register.py-->line:55]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-10 22:10:44,679 - [test01_register.py-->line:56]- ERROR: '仅允许6-20个字符的确认密码' not found in '两次输入密码不正确'
+Traceback (most recent call last):
+  File "E:\code\test_platform\testcases\test01_register.py", line 49, in test_regiter
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 1106, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6-20个字符的确认密码' not found in '两次输入密码不正确'
