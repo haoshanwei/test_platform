@@ -14,6 +14,7 @@ from common.handlepath import DATADIR
 from common.handlerequest import SendRequest
 from common.handleconf import conf
 from common.handlelog import log
+from common.handledata import CaseData, replace_data
 
 case_file = os.path.join(DATADIR, 'apicases.xlsx')
 
@@ -27,27 +28,22 @@ class TestRegister(unittest.TestCase):
     @data(*datas)
     def test_regiter(self, case):
         # 准备测试数据
-        url = conf.get('env', 'url') + case['url']
+        CaseData.user = self.random_user()
+        CaseData.email = self.random_email()
+        url = conf.get('env', 'url') + replace_data(case['url'])
         method = case['method']
-        headers = eval(conf.get('env', 'headers'))
-        phone = self.random_phone()
-        case['data'] = case['data'].replace('#phone#', phone)
+        case['data'] = replace_data(case['data'])
         data = eval(case['data'])
         expected = eval(case['expected'])
         row = case['case_id'] + 1
         # 获取结果
-        response = self.request.send(url=url, method=method, headers=headers, json=data)
+        response = self.request.send(url=url, method=method, json=data)
         res = response.json()
         # 对预期结果和相应结果进行断言
         try:
             self.assertEqual(expected['code'], res['code'])
             self.assertEqual(expected['msg'], res['msg'])
-            if case['check_sql']:
-                sql = 'SELECT id FROM futureloan.member WHERE mobile_phone={}'.format(
-                    phone)
-                # 查询当前用户的id
-                member_id = self.db.find_one(sql)['id']
-                self.assertEqual(res['data']['id'], member_id)
+
         except AssertionError as E:
             print('预期结果：', expected)
             print('实际结果：', res)
