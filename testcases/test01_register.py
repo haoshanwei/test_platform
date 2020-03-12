@@ -47,11 +47,11 @@ class TestRegister(unittest.TestCase):
                 if case['method'].lower() == 'get':
                     self.assertEqual(expected['count'], res['count'])
                 else:
-                    self.assertIn(expected['msg'], list(res.values())[0][0])
+                    self.assertIn(expected['msg'], str(res.values()))
 
         except AssertionError as E:
             print('预期结果：', expected)
-            print('实际结果：', res)
+            print('实际结果：', status, res)
             self.excel.write_data(row=row, column=8, value='不通过')
             log.error('{}用例不通过'.format(case['title']))
             log.exception(E)

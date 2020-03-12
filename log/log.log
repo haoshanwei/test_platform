@@ -538,3 +538,503 @@ Traceback (most recent call last):
   File "C:\Users\liyaozhi\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 680, in fail
     raise self.failureException(msg)
 AssertionError: '仅允许6-20个字符的确认密码' not found in '两次输入密码不正确'
+2020-03-11 09:55:43,512 - [test02_login.py-->line:53]- ERROR: 注册失败-确认密码为空用例不通过
+2020-03-11 09:55:43,512 - [test02_login.py-->line:54]- ERROR: '该字段是必填项' not found in '此邮箱已注册'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 47, in test_login
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '该字段是必填项' not found in '此邮箱已注册'
+2020-03-11 09:55:43,671 - [test02_login.py-->line:53]- ERROR: 注册失败-确认密码为5位用例不通过
+2020-03-11 09:55:43,671 - [test02_login.py-->line:54]- ERROR: '仅允许6~20个字符的确认密码' not found in '此邮箱已注册'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 47, in test_login
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6~20个字符的确认密码' not found in '此邮箱已注册'
+2020-03-11 09:55:43,791 - [test02_login.py-->line:53]- ERROR: 注册失败-确认密码为21位用例不通过
+2020-03-11 09:55:43,791 - [test02_login.py-->line:54]- ERROR: '仅允许6~20个字符的确认密码' not found in '此邮箱已注册'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 47, in test_login
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '仅允许6~20个字符的确认密码' not found in '此邮箱已注册'
+2020-03-11 09:55:43,930 - [test02_login.py-->line:53]- ERROR: 注册失败-两个密码不一致用例不通过
+2020-03-11 09:55:43,930 - [test02_login.py-->line:54]- ERROR: '两次输入密码不正确' not found in '此邮箱已注册'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 47, in test_login
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '两次输入密码不正确' not found in '此邮箱已注册'
+2020-03-11 09:56:44,068 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 09:56:44,068 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 10:17:01,694 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 10:17:01,694 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:08:01,339 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:08:01,339 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:12:37,922 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:12:37,922 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:26:00,730 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:26:00,730 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:28:48,587 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:28:48,588 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:32:29,044 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:32:29,044 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:35:36,483 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:35:36,483 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:45:17,561 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:45:17,561 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 11:48:36,057 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 11:48:36,057 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 13:31:50,358 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 13:31:50,368 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 14:48:58,829 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 14:48:58,829 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 14:59:23,712 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 14:59:23,712 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 15:04:28,727 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 15:04:28,728 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 15:04:32,337 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-11 15:04:32,337 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:04:32,427 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-11 15:04:32,427 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:42:49,318 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 15:42:49,318 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 15:42:53,603 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-11 15:42:53,603 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:42:53,711 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-11 15:42:53,711 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:42:54,484 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-用例名称超过200个字符用例不通过
+2020-03-11 15:42:54,484 - [test05_testcases.py-->line:70]- ERROR: '请确保这个字段不能超过 200 个字符' not found in '请确保这个字段不能超过 50 个字符。'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '请确保这个字段不能超过 200 个字符' not found in '请确保这个字段不能超过 50 个字符。'
+2020-03-11 15:52:56,358 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 15:52:56,358 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 15:53:00,190 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-11 15:53:00,190 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:53:00,288 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-11 15:53:00,288 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 15:53:01,000 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-用例名称超过200个字符用例不通过
+2020-03-11 15:53:01,000 - [test05_testcases.py-->line:70]- ERROR: '请确保这个字段不能超过 200 个字符' not found in '请确保这个字段不能超过 50 个字符。'
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], list(res.values())[0][0])
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '请确保这个字段不能超过 200 个字符' not found in '请确保这个字段不能超过 50 个字符。'
+2020-03-11 16:07:28,920 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-11 16:07:28,920 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-11 16:07:32,553 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-11 16:07:32,553 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 16:07:32,652 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-11 16:07:32,652 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-11 16:07:33,329 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-用例名称超过200个字符用例不通过
+2020-03-11 16:07:33,329 - [test05_testcases.py-->line:70]- ERROR: '请确保这个字段不能超过 200 个字符' not found in "dict_values([['请确保这个字段不能超过 50 个字符。']])"
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], str(res.values()))
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '请确保这个字段不能超过 200 个字符' not found in "dict_values([['请确保这个字段不能超过 50 个字符。']])"
+2020-03-11 16:07:33,521 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-项目信息不存在用例不通过
+2020-03-11 16:07:33,521 - [test05_testcases.py-->line:70]- ERROR: '该所选项目不存在' not found in "dict_values([{'pid': ['所选项目不存在!']}])"
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], str(res.values()))
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '该所选项目不存在' not found in "dict_values([{'pid': ['所选项目不存在!']}])"
+2020-03-11 16:07:33,636 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-接口信息不存在用例不通过
+2020-03-11 16:07:33,636 - [test05_testcases.py-->line:70]- ERROR: '该所选接口不存在' not found in "dict_values([{'iid': ['所选接口不存在!']}])"
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], str(res.values()))
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '该所选接口不存在' not found in "dict_values([{'iid': ['所选接口不存在!']}])"
+2020-03-12 10:16:27,332 - [test01_register.py-->line:56]- ERROR: 注册失败-用户名已注册用例不通过
+2020-03-12 10:16:27,332 - [test01_register.py-->line:57]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test01_register.py", line 45, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:28,007 - [test01_register.py-->line:56]- ERROR: 注册失败-邮箱已注册用例不通过
+2020-03-12 10:16:28,007 - [test01_register.py-->line:57]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test01_register.py", line 45, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:30,235 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-12 10:16:30,235 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-12 10:16:31,886 - [test03_projects.py-->line:68]- ERROR: 创建项目失败-名称重复用例不通过
+2020-03-12 10:16:31,886 - [test03_projects.py-->line:69]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test03_projects.py", line 60, in test_projects
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:33,524 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-名称重复用例不通过
+2020-03-12 10:16:33,524 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:34,103 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-12 10:16:34,103 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:34,223 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-12 10:16:34,223 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:16:34,893 - [test05_testcases.py-->line:69]- ERROR: 创建用例失败-用例名称超过50个字符用例不通过
+2020-03-12 10:16:34,893 - [test05_testcases.py-->line:70]- ERROR: '请确保这个字段不能超过 500 个字符' not found in "dict_values([['请确保这个字段不能超过 50 个字符。']])"
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test05_testcases.py", line 63, in test_cases
+    self.assertIn(expected['msg'], str(res.values()))
+  File "D:\python\lib\unittest\case.py", line 1119, in assertIn
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\python\lib\unittest\case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '请确保这个字段不能超过 500 个字符' not found in "dict_values([['请确保这个字段不能超过 50 个字符。']])"
+2020-03-12 10:16:36,295 - [test_mainflow.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-12 10:16:36,295 - [test_mainflow.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test_mainflow.py", line 48, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-12 10:16:36,465 - [test_mainflow.py-->line:53]- ERROR: 创建项目成功用例不通过
+2020-03-12 10:16:36,465 - [test_mainflow.py-->line:54]- ERROR: 201 != 401
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test_mainflow.py", line 48, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 401
+2020-03-12 10:16:36,624 - [test_mainflow.py-->line:53]- ERROR: 创建接口成功用例不通过
+2020-03-12 10:16:36,624 - [test_mainflow.py-->line:54]- ERROR: 201 != 401
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test_mainflow.py", line 48, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 401
+2020-03-12 10:16:36,815 - [test_mainflow.py-->line:53]- ERROR: 创建用例成功用例不通过
+2020-03-12 10:16:36,815 - [test_mainflow.py-->line:54]- ERROR: 201 != 401
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test_mainflow.py", line 48, in test_regiter
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 401
+2020-03-12 10:24:35,585 - [test02_login.py-->line:53]- ERROR: 登录成功用例不通过
+2020-03-12 10:24:35,586 - [test02_login.py-->line:54]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test02_login.py", line 45, in test_login
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200
+2020-03-12 10:24:39,315 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为字符串用例不通过
+2020-03-12 10:24:39,315 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:24:39,407 - [test04_interfaces.py-->line:69]- ERROR: 创建接口失败-项目id为浮点数用例不通过
+2020-03-12 10:24:39,407 - [test04_interfaces.py-->line:70]- ERROR: 400 != 201
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test04_interfaces.py", line 61, in test_interfaces
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 400 != 201
+2020-03-12 10:24:41,511 - [test_mainflow.py-->line:58]- ERROR: 登录成功用例不通过
+2020-03-12 10:24:41,512 - [test_mainflow.py-->line:59]- ERROR: 201 != 200
+Traceback (most recent call last):
+  File "D:\test_platform\testcases\test_mainflow.py", line 55, in test_mainflow
+    self.assertEqual(expected['status'], status)
+  File "D:\python\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\python\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 200

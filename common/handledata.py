@@ -7,6 +7,7 @@ company:happy
 """
 
 import re
+import random
 from common.handleconf import conf
 
 
@@ -28,6 +29,11 @@ def replace_data(s):
         finally:
             s = re.sub(r1, value, s, 1)
     return s
+
+
+def random_data():
+    data = '鹿梨' + ''.join(random.sample('0123456789abcdefghijklmnopqrstuvwxyz', 6))
+    return data
 
 
 '''

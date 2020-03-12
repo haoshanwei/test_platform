@@ -9,6 +9,7 @@ Company:Happy
 import random
 import unittest
 from common.handlerequest import SendRequest
+from common.handledata import CaseData
 
 
 def random_data():
@@ -20,20 +21,27 @@ def random_data():
 user, email = random_data()
 
 request = SendRequest()
-url = r'http://api.keyou.site:8000/user/register/'
+url = r'http://api.keyou.site:8000/testcases/'
 method = 'post'
+headers = {
+    'Authorization': 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMjE5LCJ1c2VybmFtZSI6Imx1bGk1MjAiLCJleHAiOjE1ODM5OTk2MTMsImVtYWlsIjoibmV2ZXJtb3JlQDE2My5jb20ifQ.8LOfDxe9alzZVp7PbxFeW_As8rRDBUnb-AcwkXs7fec'}
 data = {
-    "username": user,
-    "email": email,
-    "password": "lemon",
-    "password_confirm": "lemonban"
+    "name": "xxxas用例",
+    "interface": {
+        "pid": 0,
+        "iid": 1
+    },
+    "include": "[1,2]",
+    "author": "可优",
+    "request": "xxx请求数据"
 }
 
 # 获取结果
-response = request.send(url=url, method=method, json=data)
+response = request.send(url=url, method=method, headers=headers, json=data)
 print(response)
 res = response.json()
-print(list(res.values())[0])
+print(str(res.values()))
 
-status = response.status_code
-print(status)
+respect = {'status': 400, 'msg': '所选项目不存在'}
+print(respect['msg'])
+
